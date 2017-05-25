@@ -103,40 +103,5 @@ namespace implementation {
 		board_[cell_idx] = x_or_o;
 	}
 
-	//void TicTacToe::PlaySmart(const Cell& x_or_o) {
-	//  assert(x_or_o != Cell::EMPTY); // Cannot play a cell with empty, only X or O.
-	//  assert(!this->IsTie()); // Ensure board has empty cells. Otherwise, may allow infinite loop in while
-	//
-	//                          // Make any winning moves.
-	//  if (this->PlayWinningMove(x_or_o))
-	//    return;
-	//
-	//  // Prevent imminent loss. (prioritizes one-away losses)
-	//  if (this->PlayToSurvive(x_or_o))
-	//    return;
-	//
-	//  // Pick best corner.
-	//  if (this->PlayGoodCorner(x_or_o))
-	//    return;
-	//
-	//  // Prevent soon-to-be loss.
-	//  if (this->PlayToDefend(x_or_o))
-	//    return;
-	//}
-
-	//bool TicTacToe::PlayWinningMove(const Cell x_or_o) {
-	//
-	//}
-	//
-	//bool TicTacToe::PlayToSurvive(const Cell x_or_o) {
-	//}
-	//
-	//bool TicTacToe::PlayGoodCorner(const Cell x_or_o) {
-	//}
-	//
-	//bool TicTacToe::PlayToDefend(const Cell x_or_o) {
-	//}
-
-
 } // namespace implementation
 } // namespace tttsolver
