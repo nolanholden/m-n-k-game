@@ -32,10 +32,12 @@ public:
 		return true;
 	}
 protected:
-	// Board width
+	// Board width.
 	const int width_;
-	// Board length
+	// Board length.
 	const int length_;
+	// Number of in-a-row plays needed to win.
+	const int in_a_row_;
 	// Max value for x coordinate on board (where top left is P(0,0)).
 	const int max_x_ = width_ - 1;
 	// Max value for y coordinates on board (where top left is P(0,0)).

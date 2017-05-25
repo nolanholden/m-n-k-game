@@ -7,9 +7,12 @@ namespace mnkgame {
 namespace implementation {
 
 	Game::Game(const int length, const int width, const int in_a_row)
-		: dim_(dimension),
-		board_(std::make_unique<Cell[]>((size_t)(dimension * dimension))) {
-		assert(dimension > 0);
+		: length_(length),
+		width_(width),
+		in_a_row_(in_a_row),
+		board_(std::make_unique<Cell[]>((size_t)(length * width))) {
+		// Only allow positive (and non-zero) ints for all three parameters.
+		assert(length > 0 && width > 0 && in_a_row > 0);
 		InitBoard();
 	}
 
