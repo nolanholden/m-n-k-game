@@ -9,6 +9,7 @@ namespace implementation {
 		X,
 		O
 	};
+	// Return the Cell as a char.
 	static char get_cell_char(const Cell cell) {
 		if (cell == Cell::EMPTY)
 			return ' ';
