@@ -1,7 +1,7 @@
 #ifndef IPRINTABLE_H
 #define IPRINTABLE_H
 
-namespace tttsolver {
+namespace mnkgame {
 namespace implementation {
 namespace interfaces {
 
