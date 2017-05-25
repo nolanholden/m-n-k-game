@@ -16,4 +16,4 @@ A performant, C++ implementation of the [m,n,k-game](http://weijima.com/index.ph
 Above, 'O' has won win 'k'-in-a-row at: (1,3), (2,4), (3,5), (4,6)
 
 ---
-##### This repository mostly adopts the [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
+##### This repository mostly adopts the [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html).
