@@ -70,17 +70,17 @@ namespace implementation {
 	}
 
 	void Game::Print() const {
-		for (int y = 0; y < dim_; ++y) {
-			const int shift = y * dim_;
-			for (int x = 0; x < dim_; ++x) {
+		for (int y = 0; y < length_; ++y) {
+			const int shift = y * width_;
+			for (int x = 0; x < width_; ++x) {
 				std::cout << ' ' << get_cell_char(board_[x + shift]) << ' ';
-				if (x < max_coordinate_)
+				if (x < max_x_)
 					std::cout << '|';
 			}
 			std::cout << std::endl;
 
-			if (y < max_coordinate_) {
-				for (int i = 0; i < dim_; ++i)
+			if (y < max_y_) {
+				for (int x = 0; x < width_; ++x)
 					std::cout << "----";
 				std::cout << std::endl;
 			}
