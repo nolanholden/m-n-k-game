@@ -3,8 +3,8 @@
 
 #include <cstdlib>
 #include <memory>
-#include "Cell.h"
-#include "IPrintable.h"
+#include "cell.h"
+#include "iprintable.h"
 
 namespace mnkgame {
 namespace implementation {
