@@ -23,7 +23,7 @@ public:
 		PlayRand(Cell::O);
 	}
 	// Return the Cell which has a complete row. If none, returns the empty cell.
-	const Cell FindWinner() const;
+	const Cell FindWinner();
 	// Returns true if the board is completely full.
 	bool IsTie() const {
 		for (int i = 0; i < size_; ++i)
@@ -32,10 +32,12 @@ public:
 		return true;
 	}
 protected:
-	// Board width
+	// Board width.
 	const int width_;
-	// Board length
+	// Board length.
 	const int length_;
+	// Number of in-a-row plays needed to win.
+	const int k_;
 	// Max value for x coordinate on board (where top left is P(0,0)).
 	const int max_x_ = width_ - 1;
 	// Max value for y coordinates on board (where top left is P(0,0)).
@@ -51,6 +53,9 @@ protected:
 	void InitBoard();
 	// Play the provided Cell in a random, empty cell.
 	void PlayRand(const Cell& x_or_o);
+	// Check for 'k'-in-a-row's over the specified range. Arguments are:
+	// (starting index, increment size, number of increments to traverse)
+	const Cell CheckRange(const int start, const int end, const int increment);
 };
 
 } // namespace implementation
