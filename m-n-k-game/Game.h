@@ -32,12 +32,16 @@ public:
 		return true;
 	}
 protected:
-	// Board length
+	// Board width
 	const int width_;
-	// Max value for x and y coordinates on board (where top left is P(0,0)).
-	const int max_coordinate_ = dim_ - 1;
+	// Board length
+	const int length_;
+	// Max value for x coordinate on board (where top left is P(0,0)).
+	const int max_x_ = width_ - 1;
+	// Max value for y coordinates on board (where top left is P(0,0)).
+	const int max_y_ = length_ - 1;
 	// Total number of cells on the board (dim_ * dim_).
-	const int size_ = dim_ * width_;
+	const int size_ = length_ * width_;
 	// Last index of cells container (size_ - 1).
 	const int last_idx_ = size_ - 1;
 	// Implements a 2D container. (To access: pieces[x + y * width_])
