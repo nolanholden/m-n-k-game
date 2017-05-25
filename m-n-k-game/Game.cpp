@@ -95,8 +95,10 @@ namespace implementation {
 	}
 
 	void Game::PlayRand(const Cell& x_or_o) {
-		assert(x_or_o != Cell::EMPTY); // Cannot play a cell with empty, only X or O.
-		assert(!this->IsTie()); // Ensure board has empty cells. Otherwise, may allow infinite while loop
+		// Cannot play a cell with empty.
+		assert(x_or_o == Cell::X || x_or_o == Cell::O);
+		// Ensure board has empty cells. Otherwise, may allow infinite while loop
+		assert(!this->IsTie());
 
 		int cell_idx;
 		while (board_[(cell_idx = rand() % size_)] != Cell::EMPTY) {}
