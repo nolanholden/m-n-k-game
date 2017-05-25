@@ -1,7 +1,9 @@
-#include "Game.h"
-#include "Cell.h"
+#include "game.h"
+
 #include <cassert>
 #include <iostream>
+
+#include "cell.h"
 
 namespace mnkgame {
 namespace implementation {
