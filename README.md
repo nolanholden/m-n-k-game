@@ -1,5 +1,5 @@
 # m,n,k-game
-A performant, C++ implementation of the [m,n,k-game](http://weijima.com/index.php?option=com_content&view=article&id=11&Itemid=15).
+A performant, C++ implementation of the [m,n,k-game](http://weijima.com/index.php?option=com_content&view=article&id=11).
 
 ---
 #### An m,n,k game, where m = 5, n = 9, k = 4:
