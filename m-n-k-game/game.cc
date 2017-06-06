@@ -115,4 +115,4 @@ namespace implementation {
 	}
 
 } // namespace implementation
-} // namespace tttsolver
+} // namespace mnkgame
